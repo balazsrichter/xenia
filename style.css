@@ -1,0 +1,46 @@
+﻿body {width:70%; margin: auto; background-color: rgb(15,20,20); font-family: verdana; color: azure; text-align: justify;}
+
+header {text-align: center; background-image: url(img/szurkefust.webp); background-position: center; border-radius: 13px; margin-top: 1%}
+
+nav {display: flex; flex-direction: row; justify-content: space-evenly; font-size: 1.4rem; font-weight: bold; margin-top: 1%; background-image: url(img/szurkefust.webp); border-style: solid; border-width: 1px; border-radius: 13px}
+nav div {transition: 0.5s; padding: 0.4%}
+nav div:hover {transform: scale(1.1, 1.1)}
+a:link, a:visited {color:darkturquoise}
+a:hover, a:active {color: chartreuse; text-shadow: 2px 2px 10px mediumvioletred}
+.menuelem {text-decoration: none}
+
+#eletrajz {display: flex; flex-direction: row; margin-top: 1%}
+aside {margin-top: 1%}
+#xeniaprofil {width: 100%; border-radius: 13px; margin-top: 5%}
+section {padding: 1%}
+h1, h2 {color: lime}
+h3 {color: darkorange}
+
+#kviz {background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5)), url(img/Xenia_zold.jpg); background-position: top; border-radius: 13px; padding: 1%; margin-top: 1%}
+.kerdes {display: flex; flex-direction: row}
+h4 {padding-left: 1%; font-style: italic; font-weight: bold}
+#bekuldgomb {font-weight: bold; font-size: 1.1rem; width: 80px; height: 30px; background-color: lime; border-radius: 8px}
+#eredmeny {display: flex; flex-direction: row}
+#eredmenyszoveg {margin-right: 1%; font-weight: bold}
+#szamlalo, #gratula {font-weight: bold; font-style: italic}
+#gratula {margin-left: 1%}
+
+footer {text-align: center; margin-top: 2%; margin-bottom: 2%; padding-top: 1%; font-style: italic; border-top: double; border-radius: 3px}
+
+
+
+
+
+@media screen and (max-width: 1599px)
+{
+body{width: 90%; background-color: rgb(10,15,15)}
+}
+
+
+@media screen and (min-width: 1600px)
+{
+
+     
+  
+}
+@media print {}

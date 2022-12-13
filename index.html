@@ -1,0 +1,100 @@
+﻿<!doctype html>
+<html lang="hu">
+<head>
+<meta charset=utf-8>
+<title>XENIA (UA)</title>
+<link rel="stylesheet" href="./style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+<svg id=logo width=300 height=100>
+<defs>
+<linearGradient id=atmenet x1=0% y1=0% x2=0% y2=100%>
+<stop offset=0% style=stop-color:blue />
+<stop offset=100% style=stop-color:yellow />
+</linearGradient>
+<linearGradient id=szovegatmenet x1=0% y1=0% x2=0% y2=100%>
+<stop offset=0% style=stop-color:purple />
+<stop offset=100% style=stop-color:darkred />
+</linearGradient>
+<linearGradient id=keretatmenet x1=0% y1=0% x2=0% y2=100%>
+<stop offset=0% style=stop-color:yellow />
+<stop offset=100% style=stop-color:blue />
+</linearGradient>
+</defs>
+<rect x=10 y=10 rx=30 ry=30 width=280 height=80 style="fill:url(#atmenet); stroke: url(#keretatmenet); stroke-width: 2px"/>
+<text fill=url(#szovegatmenet) font-size=60 font-family=calibri font-weight=bold x=73 y=70 style="text-shadow: 1px 1px 2px black">XENIA</text>
+</svg>
+</header>
+
+<nav>
+<div> <a class=menuelem href="index.html">Bemutatkozás</a></div>
+<div> <a class=menuelem href="fellepesek.html">Fellépések</a></div>
+<div> <a class=menuelem href="zeneszamok.html">EP/Track</a></div>
+<div> <a class=menuelem href="kapcsolat.html">Kapcsolat</a></div>
+</nav>
+	
+<div id=eletrajz>
+<aside>
+<img alt="Xenia" src=./img/Xenia.jpg title=Xenia id=xeniaprofil>
+</aside>
+
+<section>
+<h1>Életrajz</h1>
+<p> <a href="https://ra.co/dj/xenia/biography" target="blank">Kseniia Kniazieva</a> 1996. január 3. -án született a nyugat-ukrajnai Ternopil régió egy kis falujában, ahol gyermekkorát töltötte. Xenia 2013-ban a fővárosba, Kijevbe költözött, ahol beiratkozott a Műszaki Egyetemre, de 18 évesen otthagyta tanulmányait, hogy fejest ugorjon a kijevi éjszakai életb azzal az elhatározással, hogy a DJ pult másik oldalán álljon. 2016 -ban debütált a Radio Intense streaming projektben - két videó DJ mixet készített, amelyek egyenként több mint egymillió megtekintést értek el - ez volt a fordulópont a profi DJ karrierjében. <br> <br>
+
+Xenia 2018 -ban egy kis házi stúdiót épít, és ugyanebben az évben játszik először a legendás kijevi szórakozóhelyen, a Heaven klubban. A fővárosi éjszakai élet szereplői és Xenia között szerelem volt első látásra, így azonnal a klub rezidense lett. A hírnév Ukrajnában nem váratott sokáig magára, és az év végére Xenia az egyik legsűrűbb turnénaptárral büszkélkedhetett, hazájában klubesemények és nagy fesztiválok headlinerévé vált. A pandémia időszakában az IAMT Music Group-pal közösen megnyitja saját kiadóját, a Numen -t, amely meglehetősen rövid idő alatt igen erős techno márkává válik, és igazi mágnesként vonzza a fiatal és tapasztalt techno producerek sokaságát.</p>
+</section>
+</div>
+
+<div id=kviz>
+<h2>Mennyire ismered? Indulhat a Xenia kvíz!</h2>
+
+<form>	
+<div class=kerdes><h3>Mi a vezetékneve?</h3> <h4 id=v1></h4></div>
+<input type=radio name=vezeteknev value=3><label>Korolova</label>
+<input type=radio name=vezeteknev id=vezeteknev value=1><label>Kniazieva</label>
+<input type=radio name=vezeteknev value=2><label>Arkusha</label>
+
+
+<div class=kerdes><h3>Melyik évben született?</h3><h4 id=v2></h4></div>
+<input type=radio name=szulev value=3><label>1998</label>
+<input type=radio name=szulev value=2><label>2000</label>
+<input type=radio name=szulev id=szulev value=1><label>1996</label>	
+	
+<div class=kerdes><h3>Melyik régióban született?</h3><h4 id=v3></h4></div>
+<input type=radio name=regio id=regio value=1><label>Ternopil</label>
+<input type=radio name=regio value=2><label>Kijev</label>
+<input type=radio name=regio value=3><label>Chernihiv</label>
+
+<div class=kerdes><h3>Melyik klubban indult a karrierje?</h3><h4 id=v4></h4></div>
+<input type=radio name=klub value=3><label>Kompass</label>
+<input type=radio name=klub value=2><label>Berghain</label>
+<input type=radio name=klub id=klub value=1><label>Heaven</label>	
+
+<div class=kerdes><h3>Hogy hívják a saját lemezkiadóját?</h3><h4 id=v5></h4></div>
+<input type=radio name=kiado value=3><label>Siona</label>
+<input type=radio name=kiado id=kiado value=1><label>Numen</label>
+<input type=radio name=kiado value=2><label>Exhale</label>
+<br>
+</form>
+<br>
+<button id=bekuldgomb onclick=kvizkiir()>Beküld</button>
+		
+<div id=eredmeny>
+<p id=eredmenyszoveg>Helyes válaszok száma:</p>	
+<p id=szamlalo></p>
+<p id=gratula></p>
+</div>	
+</div>	
+
+<footer>
+Elérhetőségek
+</footer>	
+	
+<script src="./main.js"> </script>
+</body>
+</html>
