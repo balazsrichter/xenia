@@ -31,10 +31,9 @@
 </header>
 
 <nav>
-<div> <a class=menuelem href="index.html">Bemutatkozás</a></div>
+<div> <a class=menuelem href="index.html" id=aktualismenu>Bemutatkozás</a></div>
 <div> <a class=menuelem href="fellepesek.html">Fellépések</a></div>
-<div> <a class=menuelem href="zeneszamok.html">EP/Track</a></div>
-<div> <a class=menuelem href="kapcsolat.html">Kapcsolat</a></div>
+<div> <a class=menuelem href="zeneszamok.html">Zeneszámok</a></div>
 </nav>
 	
 <div id=eletrajz>
@@ -43,15 +42,17 @@
 </aside>
 
 <section>
-<h1>Életrajz</h1>
+<h1 id=focim>Életrajz</h1>
+<div id=bio>	
 <p> <a href="https://ra.co/dj/xenia/biography" target="blank">Kseniia Kniazieva</a> 1996. január 3. -án született a nyugat-ukrajnai Ternopil régió egy kis falujában, ahol gyermekkorát töltötte. Xenia 2013-ban a fővárosba, Kijevbe költözött, ahol beiratkozott a Műszaki Egyetemre, de 18 évesen otthagyta tanulmányait, hogy fejest ugorjon a kijevi éjszakai életb azzal az elhatározással, hogy a DJ pult másik oldalán álljon. 2016 -ban debütált a Radio Intense streaming projektben - két videó DJ mixet készített, amelyek egyenként több mint egymillió megtekintést értek el - ez volt a fordulópont a profi DJ karrierjében. <br> <br>
 
 Xenia 2018 -ban egy kis házi stúdiót épít, és ugyanebben az évben játszik először a legendás kijevi szórakozóhelyen, a Heaven klubban. A fővárosi éjszakai élet szereplői és Xenia között szerelem volt első látásra, így azonnal a klub rezidense lett. A hírnév Ukrajnában nem váratott sokáig magára, és az év végére Xenia az egyik legsűrűbb turnénaptárral büszkélkedhetett, hazájában klubesemények és nagy fesztiválok headlinerévé vált. A pandémia időszakában az IAMT Music Group-pal közösen megnyitja saját kiadóját, a Numen -t, amely meglehetősen rövid idő alatt igen erős techno márkává válik, és igazi mágnesként vonzza a fiatal és tapasztalt techno producerek sokaságát.</p>
+</div>	
 </section>
 </div>
 
 <div id=kviz>
-<h2>Mennyire ismered? Indulhat a Xenia kvíz!</h2>
+<h2>Mennyire ismered? <br> Indulhat a Xenia kvíz!</h2>
 
 <form>	
 <div class=kerdes><h3>Mi a vezetékneve?</h3> <h4 id=v1></h4></div>
@@ -68,11 +69,11 @@ Xenia 2018 -ban egy kis házi stúdiót épít, és ugyanebben az évben játszi
 <div class=kerdes><h3>Melyik régióban született?</h3><h4 id=v3></h4></div>
 <input type=radio name=regio id=regio value=1><label>Ternopil</label>
 <input type=radio name=regio value=2><label>Kijev</label>
-<input type=radio name=regio value=3><label>Chernihiv</label>
+<input type=radio name=regio value=3><label>Csernihiv</label>
 
 <div class=kerdes><h3>Melyik klubban indult a karrierje?</h3><h4 id=v4></h4></div>
 <input type=radio name=klub value=3><label>Kompass</label>
-<input type=radio name=klub value=2><label>Berghain</label>
+<input type=radio name=klub value=2><label>Labyrinth</label>
 <input type=radio name=klub id=klub value=1><label>Heaven</label>	
 
 <div class=kerdes><h3>Hogy hívják a saját lemezkiadóját?</h3><h4 id=v5></h4></div>
@@ -85,14 +86,17 @@ Xenia 2018 -ban egy kis házi stúdiót épít, és ugyanebben az évben játszi
 <button id=bekuldgomb onclick=kvizkiir()>Beküld</button>
 		
 <div id=eredmeny>
-<p id=eredmenyszoveg>Helyes válaszok száma:</p>	
+<p id=eredmenyszoveg>Helyes válaszok:</p>	
 <p id=szamlalo></p>
 <p id=gratula></p>
 </div>	
 </div>	
 
 <footer>
-Elérhetőségek
+<a href="https://www.youtube.com/@xenia-ua" target=blank><img src="img/Youtube1.png" alt=YouTube title=YouTube width=60></a>	
+<a href="https://www.instagram.com/xenia_ua/" target=blank><img src="img/Insta.png" alt=Insta title=Insta width=40></a>
+<a href="https://www.beatport.com/artist/xenia-ua/806777" target=blank><img src="img/Beatport.webp" alt=BeatPort title=BeatPort width=45></a>
+<a href="https://soundcloud.com/xenia_ua/" target=blank><img src="img/SoundCloud.png" alt=SoundCloud title=SoundCloud width=45></a>
 </footer>	
 	
 <script src="./main.js"> </script>
