@@ -1,0 +1,179 @@
+﻿<!doctype html>
+<html lang="hu">
+<head>
+<meta charset=utf-8>
+<title>XENIA (UA)</title>
+<link rel="stylesheet" href="./style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+<svg id=logo width=300 height=100>
+<defs>
+<linearGradient id=atmenet x1=0% y1=0% x2=0% y2=100%>
+<stop offset=0% style=stop-color:blue />
+<stop offset=100% style=stop-color:yellow />
+</linearGradient>
+<linearGradient id=szovegatmenet x1=0% y1=0% x2=0% y2=100%>
+<stop offset=0% style=stop-color:purple />
+<stop offset=100% style=stop-color:darkred />
+</linearGradient>
+<linearGradient id=keretatmenet x1=0% y1=0% x2=0% y2=100%>
+<stop offset=0% style=stop-color:yellow />
+<stop offset=100% style=stop-color:blue />
+</linearGradient>
+</defs>
+<rect x=10 y=10 rx=30 ry=30 width=280 height=80 style="fill:url(#atmenet); stroke: url(#keretatmenet); stroke-width: 2px"/>
+<text fill=url(#szovegatmenet) font-size=60 font-family=calibri font-weight=bold x=73 y=70 style="text-shadow: 1px 1px 2px black">XENIA</text>
+</svg>
+</header>
+
+<nav>
+<div> <a class=menuelem href="index.html">Bemutatkozás</a></div>
+<div> <a class=menuelem href="fellepesek.html" id=aktualismenu>Fellépések</a></div>
+<div> <a class=menuelem href="zeneszamok.html">Zeneszámok</a></div>
+</nav>
+
+<br> 	
+<br> 	
+<h1 class=cimkozep>Közös képek itthon és külföldön</h1>
+
+<div class=fellepesek>	
+<div class=fellepes>
+<h5>Ljubljana</h5>
+<img src="img/Xenia%20-%20Cvetlicarna.jpg" alt=Ljubljana title=Ljubljana id=ljubljana>
+</div>
+	
+<div class=fellepes>
+<h5>Halloween</h5>
+<img src="img/Xenia%20-%20Rept%C3%A9r.jpg" alt=Halloween title=Halloween id=halloween>
+</div>
+
+	
+<div class=fellepes>
+<h5>Komárom</h5>
+<img src="img/Xenia%20-%20Kom%C3%A1rom.jpg" alt=Komárom title=Komárom id=komarom>
+</div>	
+</div>
+	
+<div class=fellepesek>	
+	
+<div class=fellepes>
+<h5>Szabadka</h5>
+<img src="img/Xenia%20-%20Szabadka.jpg" alt=Szabadka title=Szabadka id=szabadka>
+</div>
+	
+<div class=fellepes>
+<h5>Budapest</h5>
+<img src="img/Xenia.jpg" alt=Budapest title=Budapest id=budapest>
+</div>
+
+<div class=fellepes>
+<h5>Szeged</h5>
+<img src="img/Xenia%20-%20Szeged.jpg" alt=Szeged title=Szeged id=szeged>
+</div>	
+</div>	
+
+
+	
+<form id=igenylolap>
+<h1 id=urlapcim>Fellépés igénylőlap</h1>
+<p id=minta>MINTA! - Foglalás kérelem a láblécben található elérhetőségeken adható le.</p>		
+<fieldset class=belsokeret>
+<legend>Szervező adatai</legend>
+
+<div class=urlapsor>
+<div class=urlapblokk> 	
+<label for=nev>Szervező név</label>
+<input type=text name=nev id=nev placeholder="Szervező neve" disabled>
+</div>	
+
+<div class=urlapblokk> 	
+<label for=email>E-mail cím</label>
+<input type=text name=email id=email placeholder="pelda@gmail.com" disabled>	
+</div>
+</div>	
+
+<div class=urlapsor>
+<div class=urlapblokk> 	
+<label for=telefon>Telefonszám</label>
+<input type=text name=telefon id=telefon placeholder="+36 30 123 4567" disabled>
+</div>	
+
+<div class=urlapblokk> 	
+<label for=weboldal>Weboldal</label>
+<input type=text name=weboldal id=weboldal placeholder="www.szervezo.hu" disabled>
+</div>
+</div>	
+</fieldset>
+
+<fieldset>
+<legend>Esemény</legend>
+
+<div class=urlapsor>
+<div class=urlapblokk> 	
+<label for=party>Esemény neve</label>
+<input type=text name=party id=party placeholder="Party/fesztivál neve" disabled>
+</div>
+
+<div class=urlapblokk>
+<label for=fesztival>Klub/fesztivál</label>	
+<div><input type=radio value=belter id=belterkulter name=party><label for=belter>Beltéri</label></div>
+<div><input type=radio value=kulter id=belterkulter name=party><label for=kulter>Kültéri</label></div>
+</div>	
+</div>
+
+<div class=urlapsor>
+<div class=urlapblokk>
+<label for=helyszin>Helyszín</label>
+<input type=text name=helyszin id=helyszin placeholder="Pontos helyszín" disabled>
+</div>
+	
+<div class=urlapblokk>
+<label for=datum>Dátum</label>
+<input type=date name=datum id=datum placeholder="Fellépés napja">
+</div>
+</div>
+
+<div class=urlapsor>
+<div class=urlapblokk>	
+<label for=ora>Kezdő időpont</label>
+<input type=time name=ora id=ora placeholder="Kezdő időpont (óra:perc)">
+</div>
+	
+<div class=urlapblokk>	
+<label for="szett">Időtartam</label>
+<select id="szett" name="szett">
+  <option value="1">1 óra</option>
+  <option value="1:30">1,5 óra</option>
+  <option value="2">2 óra</option>
+  <option value="2:30">2,5 óra</option>
+  <option value="3:00">3 óra</option>
+</select>
+</div>
+</div>
+</fieldset>
+
+<fieldset>
+<legend>Egyéb tudnivalók</legend>	
+<textarea rows=10 disabled> </textarea>
+</fieldset>
+<div id=gombok>
+<button name=bekuld id=bekuld onclick=hiba()>Beküld</button>
+<input type=reset name=torles value=Törlés id=torles>	
+</div>
+</form>	
+
+<footer>
+<a href="https://www.youtube.com/@xenia-ua" target=blank><img src="img/Youtube1.png" alt=YouTube title=YouTube width=60></a>	
+<a href="https://www.instagram.com/xenia_ua/" target=blank><img src="img/Insta.png" alt=Insta title=Insta width=40></a>
+<a href="https://www.beatport.com/artist/xenia-ua/806777" target=blank><img src="img/Beatport.webp" alt=BeatPort title=BeatPort width=45></a>
+<a href="https://soundcloud.com/xenia_ua/" target=blank><img src="img/SoundCloud.png" alt=SoundCloud title=SoundCloud width=45></a>
+</footer>
+
+	
+<script src="./main.js"> </script>
+</body>
+</html>
